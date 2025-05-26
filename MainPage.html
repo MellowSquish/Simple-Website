@@ -1,0 +1,142 @@
+<!-- | 2025-05-19 | Lab 3 | CST8238 | Chloe Capriotti | 041154964 | -->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="StyleSheet.css"/>
+</head> 
+<body>
+    <!-- Header with title -->
+    <div id="header">
+        <h1><b>Computer Engineer Technology - Computing Science - Web Programming</b></h1>
+    </div>
+    <!-- Menu with links to index and multimedia pages -->
+    <div id="menu">
+        <h4><a style=color:#40499b; href="index.html">Index</a> <a style=color:#40499b; href="Multimedia.html">Multimedia</a><h4>
+    </div>
+    <!-- Content with table of css elements -->
+    <div id="content">
+        <table>
+            <!--Column headers-->
+            <thead>
+                <tr>
+                    <th id="col-one">CSS Style Rule</th>
+                    <th id="col-two">Syntax</th>
+                    <th id="col-three">Example</th>
+                </tr>
+            </thead>
+            <!-- Row 1 - Class Selector -->
+            <tr>
+                <td><p>Class Selector</p></td>
+                <td><xmp>
+.first {
+    font-style: italic;
+    color: brown;
+}
+                </xmp></td>
+                <td><h3>Reviews</h3>
+                    <p class="first">By Chloe Capriotti<br>
+                    The Sanrio characters are cute.</p>
+                </td>
+            </tr>
+            <!-- Row 2 - Id Selector -->
+            <tr>
+                <td><p>Id Selector</p></td>
+                <td><xmp>
+#latestComment {
+    font-style: italic;
+    color: blue;
+}
+                </xmp></td>
+                <td><h3>Reviews</h3>
+                    <div id="latestComment">
+                        <p>By Chloe on <date>May 22, 2025</date><br>
+                        There are so many different characters!</p>
+                    </div>
+                </td>
+            </tr>
+            <!-- Row 3 - Attribute Selector -->
+            <tr>
+                <td><p>Attribute Selector</p></td>
+                <td><xmp style="left: 0px;">
+[title] {
+    cursor: help;
+    padding-bottom: 3px;
+    border-bottom: 2px dotted blue;
+    text-decoration: none;
+}
+                </xmp></td>
+                <td>
+                    <p><span title="Cat">🐈‍⬛</span></p>
+                    <h3><span title="Sanrio">Sanrio</span></h3>
+                    <p>Sanrio has cats...</p>
+                    <img title="Hello Kitty" width="100" height="100" src="assets/hellokitty1.png">
+                    <img title="Kuromi" width="100" height="100" src="assets/kuromi.png">
+                    <img title="Hello Kitty" width="100" height="100" src="assets/hellokitty3.png">
+                </td>
+            </tr>
+            <!-- Row 4 - Pseudo Selector-->
+            <tr>
+                <td><p>Pseudo Selector</p></td>
+                <td><xmp style="left: 0px;">
+a:link {
+    text-decoration:underline;
+    color: purple;
+}
+
+a:visited {
+    text-decoration: underline;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+                </xmp></td>
+                <td><p>Learn more at: <a href="https://www.sanrio.com/">Sanrio Official Website</a></p>
+                    <ol>
+                        <li><a href="https://www.sanrio.com/collections/hello-kitty">Hello Kitty</a></li>
+                        <li><a href="https://www.sanrio.com/collections/cinnamoroll">Cinnamon</a></li>
+                        <li><a href="https://www.sanrio.com/collections/kuromi">Kuromi</a></li>
+                    </ol>
+                </td>
+            </tr>
+            <!-- Row 5 - Contextual Selector-->
+            <tr>
+                <td><p>Contextual Selector</p></td>
+                <td><xmp>
+ul a:link {
+    background-color: yellow;
+}
+
+#main div p:first-child {
+    color: green;
+}
+                </xmp></td>
+                <td><p>Other Characters:</p>
+                    <div id="main">
+                        <ul>
+                            <li><a href="https://www.sanrio.com/collections/hangyodon">Hangyodon</a></li>
+                            <li><a href="https://www.sanrio.com/collections/gudetama">Gudetama</a></li>
+                            <li><a href="https://www.sanrio.com/collections/badtz-maru">Badtz-maru</a></li>
+                        </ul>
+                            <div>
+                                <p>Copyright © of Sanrio</p>
+                                <p>Fun Fact: <b>Hello Kitty</b> is the most popular character</p>
+                            </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+            
+    <!-- footer with author information -->         
+    <div id="footer">			
+        <p>041154964</p>
+        <p>Chloe Capriotti</p>
+        <p>capr0017@algonquinlive.com</p>				
+    </div>
+</body>
+</html>

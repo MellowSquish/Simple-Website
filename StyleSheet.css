@@ -1,0 +1,146 @@
+/* main parts of website: *(all), header, menu, content, footer*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	margin: 0px;
+	font-family: serif;
+    background-color: rgb(252, 239, 253);
+}
+#header {
+    top: 70px;
+	background-color: rgb(252, 239, 253);
+	font-size: 16pt;
+    color: #40499b;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu {
+    border: solid #40499b;
+    word-spacing: 2em;
+    text-align: center;
+    background-color: rgb(252, 239, 253);
+    width: 200px;
+    position: absolute;
+    height: 50px;
+    top: 110px;
+    right: 0px;
+}
+#content {
+    position: absolute;
+	font-size: 11pt;
+    height: auto;
+    width: 100%;
+    float: center;
+    min-height: 100%;
+	text-align: left;
+    background-color: rgb(215, 227, 250);
+	left: 0px;
+	top: 140px;
+    padding-bottom: 70px;
+}
+#footer {
+	position:fixed;
+	bottom: 0px;
+    background-color: #40499b;
+    color: rgb(225, 207, 242);
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Table Comments */
+table {
+    border: solid 1pt #40499b;
+    border-collapse:collapse;
+    width: 100%;
+    text-align:center;
+    justify-content:center;
+}
+th {
+    padding: 0.50em;
+    border: solid 1pt rgb(252, 239, 253);
+}
+td {
+    border: solid 1pt #40499b;
+    padding: 4pt;
+    line-height: 1.46;
+}
+thead tr {
+    background-color: #40499b;
+    color:rgb(225, 207, 242);
+    border: solid 1pt rgb(218, 201, 250);
+}
+tbody tr:nth-child(even) {
+    background-color: rgb(252, 239, 253);
+}
+
+/* Extra element adjustments: audio(mp3)/video(mp4), hr, ol/ul(list alignment) */
+#extras{
+    text-align: center
+}
+hr{
+    border: 2px solid #40499b;
+    size:2px;
+}
+ol{
+    margin-left: 245px;
+    text-align:left;
+}
+ul {
+    margin-left: 230px;
+    text-align:left;
+}
+
+/* Examples of different css elements */
+.first {
+font-style: italic;
+color: brown;
+}
+#latestComment {
+font-style: italic;
+color: blue;
+}
+[title] {
+    cursor: help;
+    padding-bottom: 3px;
+    border-bottom: 2px dotted blue;
+    text-decoration: none;
+}
+a:link {
+    text-decoration:underline;
+    color: purple;
+}
+a:visited {
+    text-decoration: underline;
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+ul a:link {
+    background-color: yellow;
+}
+#main div p:first-child {
+    color: green;
+}
+
+/* Individual column width */
+#col-one {
+    width: 30%;
+}
+#col-two {
+    width: 35%;
+}
+#col-three {
+    width: 35%;
+}
